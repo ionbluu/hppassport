@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ionbluu.HPpassport" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+
+    <name>High Point Passport to Savings</name>
+    <description>
+        The High Point Convention and Visitors Bureau's Passport to Savings program.
+    </description>
+    <author email="andrew@ionbluu.com" href="http://ionbluu.com">
+        ionbluu
+    </author>
+    
+    <platform name="ios" />
+    <platform name="android" />
+    <content src="index.html" />
+    <access origin="*" />
+
+    <preference name="Orientation" value="portrait" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+
+    <icon src="res/icon.png" />
+    <icon src="res/ios/icon-1024.png" width="1024" height="1024" />
+
+    <platform name="ios">
+        <splash src="res/ios/Default-iphone.png" width="320" height="480" />
+        <splash src="res/ios/Default@2x-iphone.png" width="640" height="960" />
+        <splash src="res/ios/Default-Portrait-ipad.png" width="768" height="1024" />
+        <splash src="res/ios/Default-Portrait@2x-ipad.png" width="1536" height="2048" />
+        <splash src="res/ios/Default-568h@2x-iphone.png" width="640" height="1136" />
+        <splash src="res/ios/Default-667h.png" width="750" height="1334" />
+        <splash src="res/ios/Default-736h.png" width="1242" height="2208" />
+    </platform>
+
+    <platform name="android">
+        <splash src="res/android/hdpi.png" density="port-hdpi" />
+        <splash src="res/android/ldpi.png" density="port-ldpi" />
+        <splash src="res/android/mdpi.png" density="port-mdpi" />
+        <splash src="res/android/xhdpi.png" density="port-xhdpi" />
+        <splash src="res/android/xxhdpi.png" density="port-xxhdpi" />
+        <splash src="res/android/xxxhdpi.png" density="port-xxxhdpi" />
+    </platform>
+
+    <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
+</widget>

@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>High Point Passport to Savings</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/passport.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).on('mobileinit', function() {
+            $.mobile.defaultPageTransition = 'slide';
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript">
+        function onBodyLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+
+        function onDeviceReady() {
+            // Phonegap is ready so call the APIs
+            window.open = cordova.InAppBrowser.open;
+        }
+    </script>
+
+</head>
+
+<body onload="onBodyLoad()">
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <div data-role="page" id="home" data-title="Home">
+        <div data-role="header" data-position="fixed">
+            <h1>Passport to Savings</h1>
+        </div><!-- header -->
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/goldicon.png" class="logo" /></p>
+
+            <p class="hpTitle centered">High Point Passport to Savings</p>
+
+
+            <p>The High Point Passport to Savings app offers discounts on furniture stores, hotels, restaurants, attractions and services. Just show the various coupons to the corresponding business to receive exclusive discounts. </p>
+
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li>
+                    <a href="#furniture" class="ui-corner-none">Furniture <span class="ui-li-count">6</span></a>
+                </li>
+                <li>
+                    <a href="#lodging">Lodging <span class="ui-li-count">2</span></a>
+                </li>
+                <li>
+                    <a href="#food">Food &amp; Drink <span class="ui-li-count">13</span></a>
+                </li>
+                <li>
+                    <a href="#services" class="ui-corner-none">Attractions &amp; Services <span class="ui-li-count">9</span></a>
+                </li>
+            </ul>
+            <br />
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li>
+                    <a href="#aboutApp" class="ui-corner-none">About This App</a>
+                </li>
+
+            </ul>
+        </div><!-- /main -->
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div>
+    </div><!-- page -->
+
+
+    <!-- =================== About This App ============== -->
+
+    <!-- Start of About page -->
+    <div data-role="page" id="aboutApp" data-title="About This App">
+
+        <div data-role="header" data-position="fixed">
+            <a href="#home" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>About This App</h2>
+        </div><!-- /header -->
+        <div role="main" class="ui-content">
+
+            <p class="centered"><img src="img/hpcvb.png" /></p>
+
+            <p class="centered">For more information contact the High Point Convention &amp; Visitors Bureau at <br /><a href="tel:336-884-5255">336-884-5255</a><br /><br />or visit us on the web at<br /><a href="http://www.highpoint.org">highpoint.org</a></p>
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+            <p id="copyright" class="centered">
+                <script type="text/javascript">
+                    copyright = new Date();
+                    update = copyright.getFullYear();
+                    document.write("Copyright &copy;" + update + " High Point Convention &amp; Visitors Bureau,  All rights reserved.");
+                </script>
+            </p>
+
+        </div><!-- /main -->
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div>
+    </div><!-- page -->
+
+
+
+    <!-- ===========LODGING===================== -->
+
+    <!-- Start of Lodging page -->
+    <div data-role="page" id="lodging" data-title="Lodging">
+
+        <div data-role="header" data-position="fixed">
+            <a href="#home" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Passport to Savings</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+
+            <h3 class="centered">Lodging</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#7oaks">Seven Oaks Bed &amp; Breakfast</a>
+                </li>
+                <li>
+                    <a href="#wingate">Wingate by Wyndham</a>
+                </li>
+            </ul>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+    <!-- Start of Seven Oaks page -->
+    <div data-role="page" id="7oaks" data-title="Seven Oaks">
+        <div data-role="header" data-position="fixed">
+            <a href="#lodging" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Seven Oaks Bed &amp; Breakfast</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img class="logo" src="img/7oaks.jpg"></p>
+            <p class="centered">
+                <strong>Seven Oaks Bed &amp; Breakfast</strong><br />
+                833 Old Mill Rd.<br />
+                High Point, NC 27265<br /><br />
+                <a href="tel:336-899-6257">336-899-6257</a><br /><br />
+                <a href="http://www.7oaksbedandbreakfast.com">7oaksbedandbreakfast.com</a>
+            </p>
+            <div class="coupon">
+                <p class="centered">Visit <a href="http://www.7oaksbedandbreakfast.com">7oaksbedandbreakfast.com</a> <br />
+                    Click on reservations, book your room, then click on your choice of discounts from the left sidebar.
+                </p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+
+    <!-- Start of Wingate by Wyndham page -->
+    <div data-role="page" id="wingate" data-title="Wingate by Wyndham">
+        <div data-role="header" data-position="fixed">
+            <a href="#lodging" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Wingate by Wyndham</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img class="logo" src="img/wingate.png"></p>
+            <p class="centered">
+                <strong>Wingate by Wyndham</strong><br />
+                3901 Sedgebrook St.<br />
+                High Point, NC 27265<br /><br />
+                <a href="tel:336-812-8787">336-812-8787</a><br /><br />
+                <a href="http://www.guestreservations.com/wingate-by-wyndham-high-point/">guestreservations.com/wingate-by-wyndham-high-point</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">10% discount off of the regular rate for the day</div>
+                <hr />
+                <div class="centered">Blackout dates where this discount will not be applicable: April 4-10, 2019; October 17-23, 2019; April 16-22, 2020; October 15-20, 2020</div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+
+
+    <!-- ===========FURNITURE========================================= -->
+
+    <!-- Start of Furniture page -->
+    <div data-role="page" id="furniture" data-title="Furniture">
+
+        <div data-role="header" data-position="fixed">
+            <a href="#home" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Passport to Savings</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+
+            <h3 class="centered">Furniture</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#ashleyInt">Ashley Interiors / Braxton Culler</a>
+                </li>
+                <li>
+                    <a href="#furn411">Furnishings 411</a>
+                </li>
+                <li>
+                    <a href="#furnlandsouth">Furnitureland South</a>
+                </li>
+                <li>
+                    <a href="#hpfurnfinds">High Point Furniture Finds</a>
+                </li>
+                <li>
+                    <a href="#hpfurnsales">High Point Furniture Sales</a>
+                </li>
+                <li>
+                    <a href="#hpfurnsalesCC">High Point Furniture Sales Clearance Center</a>
+                </li>
+            </ul>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+    <!-- Start of Ashley Interiors page -->
+    <div data-role="page" id="ashleyInt" data-title="Ashley Interiors / Braxton Culler">
+        <div data-role="header" data-position="fixed">
+            <a href="#furniture" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Ashley Interiors / Braxton Culler</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/braxtonculler.png" class="logo"></p>
+            <p class="centered">
+                <strong>Ashley Interiors / Braxton Culler</strong><br />
+                310 South Elm St.<br />
+                High Point, NC 27260<br /><br />
+                <a href="tel:366-889-7573">366-889-7573</a><br /><br />
+                <a href="http://www.braxtonculler.com">braxtonculler.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">Extra 10% off with coupon</div>
+                <hr />
+                <div class="centered"> Does not apply during our pre-market sale or on any Big Green Egg purchases</div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of Furnishings 411 page -->
+    <div data-role="page" id="furn411" data-title="Furnishings 411">
+        <div data-role="header" data-position="fixed">
+            <a href="#furniture" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Furnishings 411</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img class="logo" src="img/furnishings411.png"></p>
+            <p class="centered">
+                <strong>Furnishings 411</strong><br />
+                1937 W. Green Dr.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-689-3002">366-689-3002</a><br /><br />
+                <a href="http://www.furnishings411.com">furnishings411.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">Walk-in customers will receive 10% off first purchase.</div>
+                <hr />
+                <div class="centered">Must show this coupon on app.</div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of Furnitureland South page -->
+    <div data-role="page" id="furnlandsouth" data-title="Furnitureland South">
+        <div data-role="header" data-position="fixed">
+            <a href="#furniture" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Furnitureland South</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/furniturelandsouth.png" class="logo"></p>
+            <p class="centered">
+                <strong>Furnitureland South</strong><br />
+                5635 Riverdale Drive<br />
+                Jamestown, NC 27282<br /><br />
+                <a href="tel:366-822-3000">366-822-3000</a><br /><br />
+                <a href="http://www.furniturelandsouth.com">furniturelandsouth.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">10% off one special order item with your complimentary design consultation.</div>
+                <hr />
+                <div class="centered">See your design consultant for details.</div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of High Point Furniture Finds page -->
+    <div data-role="page" id="hpfurnfinds" data-title="High Point Furniture Finds">
+        <div data-role="header" data-position="fixed">
+            <a href="#furniture" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>High Point Furniture Finds</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/hpfurnfinds.png" class="logo"></p>
+            <p class="centered">
+                <strong>High Point Furniture Finds</strong><br />
+                1300 N. Main St.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-886-4663">366-886-4663</a><br /><br />
+                <a href="http://www.highpointfurniturefinds.com">highpointfurniturefinds.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">10% off $500 purchase or more.</div>
+                <hr />
+                <div class="centered">Not valid on sale items or special orders.</div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+
+    <!-- Start of High Point Furniture Sales page -->
+    <div data-role="page" id="hpfurnsales" data-title="High Point Furniture Sales">
+        <div data-role="header" data-position="fixed">
+            <a href="#furniture" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>High Point Furniture Sales</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/hpfurnsales.jpg" class="logo"></p>
+            <p class="centered">
+                <strong>High Point Furniture Sales</strong><br />
+                2000 Baker Rd.<br />
+                High Point, NC 27260<br /><br />
+                <a href="tel:366-841-5664">366-841-5664</a><br /><br />
+                <a href="http://www.highpointfurnituresales.com">highpointfurnituresales.com</a>
+            </p>
+            <div class="coupon">
+                <p class="centered">10% off all Floor Stock Furniture and Floor Stock Mattresses only.
+
+                </p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of High Point Furniture Sales Clearance Center page -->
+    <div data-role="page" id="hpfurnsalesCC" data-title="High Point Furniture Sales Clearance Center">
+        <div data-role="header" data-position="fixed">
+            <a href="#furniture" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>High Point Furniture Sales Clearance Center</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/hpfurnsales.jpg" class="logo"></p>
+            <p class="centered">
+                <strong>High Point Furniture Sales Clearance Center</strong><br />
+                2035 Brentwood St.<br />
+                High Point, NC 27263<br /><br />
+                <a href="tel:366-841-5664">366-841-5664</a><br /><br />
+                <a href="http://www.highpointfurnituresales.com">highpointfurnituresales.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">10-50% off all Floor Stock Furniture and Floor Stock Mattresses only.</div>
+                <hr />
+                <div class="centered">At Brentwood Street Value &amp; Clearance Store.</div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+
+
+    <!-- ===========FOOD============================================================ -->
+
+    <!-- Start of Lodging page -->
+    <div data-role="page" id="food" data-title="Food &amp; Drink">
+
+        <div data-role="header" data-position="fixed">
+            <a href="#home" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Passport to Savings</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+
+            <h3 class="centered">Food &amp; Drink</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#alexandrias">Alexandria's Bistro &amp; Catering</a>
+                </li>
+                <li>
+                    <a href="#carter1">Carter Brothers BBQ (N. Main St.)</a>
+                </li>
+                <li>
+                    <a href="#carter2">Carter Brothers BBQ (Samet Dr.)</a>
+                </li>
+                <li>
+                    <a href="#casa">Casa De Soto Mexican Cuisine</a>
+                </li>
+                <li>
+                    <a href="#debeen">DeBeen Espresso</a>
+                </li>
+                <li>
+                    <a href="#fullmoon">Full Moon Oyster Bar</a>
+                </li>
+                <li>
+                    <a href="#rome">Rome Pizza</a>
+                </li>
+                <li>
+                    <a href="#sammyg">Sammy G's Tavern</a>
+                </li>
+                <li>
+                    <a href="#steak">Steak Street</a>
+                </li>
+                <li>
+                    <a href="#sumela">Sumela Restaurant</a>
+                </li>
+                <li>
+                    <a href="#cannoli">The Cozy Cannoli</a>
+                </li>
+                <li>
+                    <a href="#peppermill">The Peppermill Cafe</a>
+                </li>
+                <li>
+                    <a href="#wickedtaco">Wicked Taco</a>
+                </li>
+            </ul>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of Alexandria's Bistro &amp; Catering page -->
+    <div data-role="page" id="alexandrias" data-title="Alexandria's Bistro &amp; Catering">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Alexandria's Bistro &amp; Catering</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/alexandrias.jpg" class="logo"></p>
+            <p class="centered">
+                <strong>Alexandria's Bistro &amp; Catering</strong><br />
+                215 E. Lexington Ave.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-883-3821">366-883-3821</a><br /><br />
+
+            </p>
+            <div class="coupon">
+                <p class="centered">10% Lunch Discount
+                </p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of Carter Brothers BBQ #1 page -->
+    <div data-role="page" id="carter1" data-title="Carter Brothers BBQ #1">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Carter Brothers BBQ #1</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/carterbros.jpg" class="logo"></p>
+            <p class="centered">
+                <strong>Carter Brothers BBQ (N. Main)</strong><br />
+                2305 N. Main St.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-869-9948">366-869-9948</a><br /><br />
+                <a href="http://www.carterbrothersbbq.com">carterbrothersbbq.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">Buy Any Plate and Beverage, Get a Free Banana Pudding.</div>
+                <hr />
+                <div class="centered">Dine In Only. One per card holder.</div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of Carter Brothers BBQ #2 page -->
+    <div data-role="page" id="carter2" data-title="Carter Brothers BBQ #2">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Carter Brothers BBQ #2</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/carterbros.jpg" class="logo"></p>
+            <p class="centered">
+                <strong>Carter Brothers BBQ (Samet Dr.)</strong><br />
+                3802 Samet Dr.<br />
+                High Point, NC 27265<br /><br />
+                <a href="tel:366-841-2241">366-841-2241</a><br /><br />
+                <a href="http://www.carterbrothersbbq.com">carterbrothersbbq.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">Buy Any Plate and Beverage, Get a Free Banana Pudding.</div>
+                <hr />
+                <div class="centered"> Dine In Only. One per card holder.
+                </div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of Casa De Soto page -->
+    <div data-role="page" id="casa" data-title="Casa De Soto Mexican Cuisine">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Casa De Soto Mexican Cuisine</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/casa-de-sotos_0.jpg" class="logo"></p>
+            <p class="centered">
+                <strong>Casa De Soto Mexican Cuisine</strong><br />
+                1800 Westchester Dr.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-886-4081">366-886-4081</a><br /><br />
+
+            </p>
+            <div class="coupon">
+                <div class="centered">$5 off $35 or more </div>
+                <hr />
+                <div class="centered"> Buy 2 Dinner Entrees (more than $10) with 2 Drinks and get 1 Dinner Entree 1/2 off.
+                </div>
+                <hr />
+                <div class="centered">Can't be used with other discounts.<br /> 1 coupon per party.<br /> Excludes alcohol.</div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of DeBeen Espresso page -->
+    <div data-role="page" id="debeen" data-title="DeBeen Espresso">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>DeBeen Espresso</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/debeen.png" class="logo"></p>
+            <p class="centered">
+                <strong>DeBeen Espresso</strong><br />
+                709 W. Lexington Ave.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-889-2107">366-889-2107</a><br /><br />
+                <a href="http://www.debeenespresso.com">debeenespresso.com</a>
+
+            </p>
+            <div class="coupon">
+                <div class="centered">$.50 off any specialty coffee drink @ DeBeen Espresso Please present app to your DeBeen Barista.</div>
+                <hr />
+                <div class="centered"> Join our Loyalty Rewards program for many more DeBeen deals
+                </div>
+                <hr />
+                <div class="centered">Only 1 discount per transaction.</div>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of Full Moon Oyster Bar page -->
+    <div data-role="page" id="fullmoon" data-title="Full Moon Oyster Bar">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Full Moon Oyster Bar</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/fullmoon.png" class="logo"></p>
+            <p class="centered">
+                <strong>Full Moon Oyster Bar</strong><br />
+                103 W. Main St.<br />
+                Jamestown, NC 27282<br /><br />
+                <a href="tel:366-307-2887">366-307-2887</a><br /><br />
+                <a href="http://www.fullmoonoysterbar.com">fullmoonoysterbar.com</a>
+
+            </p>
+            <div class="coupon">
+                <p class="centered">10% discount off the meal not including alcohol.</p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of Rome Pizza page -->
+    <div data-role="page" id="rome" data-title="Rome Pizza">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Rome Pizza</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/romepizza.png" class="logo"></p>
+            <p class="centered">
+                <strong>Rome Pizza</strong><br />
+                2100 N. Main St.<br />
+                High Point , NC 27265<br /><br />
+                <a href="tel:366-882-5582">366-882-5582</a><br /><br />
+                <a href="http://www.romeitalianpizza.com">romeitalianpizza.com</a>
+
+            </p>
+            <div class="coupon">
+                <p class="centered">10% off from the menu price.</p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of Sammy G's Tavern page -->
+    <div data-role="page" id="sammyg" data-title="Sammy G's Tavern">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Sammy G's Tavern</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/sammyg.png" class="logo"></p>
+            <p class="centered">
+                <strong>Sammy G's Tavern</strong><br />
+                3800 Tinsley Dr. Suite 109<br />
+                High Point , NC 27265<br /><br />
+                <a href="tel:366-884-3474">366-884-3474</a><br /><br />
+                <a href="http://www.sammygtavern.com">sammygtavern.com</a>
+
+            </p>
+            <div class="coupon">
+                <p class="centered">Free Loukmades (Greek dessert) with the purchase of an entree. One per table.</p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of Steak Street page -->
+    <div data-role="page" id="steak" data-title="Steak Street">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Steak Street</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/steakstreet.png" class="logo"></p>
+            <p class="centered">
+                <strong>Steak Street</strong><br />
+                3915 Sedge Brook St.<br />
+                High Point , NC 27265<br /><br />
+                <a href="tel:366-841-0222">366-841-0222</a><br /><br />
+                <a href="http://www.steakstreet.com">steakstreet.com</a>
+
+            </p>
+            <div class="coupon">
+                <p class="centered">Free appetizer with the purchase of an entree.</p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+
+    <!-- Start of Sumela Restaurant page -->
+    <div data-role="page" id="sumela" data-title="Sumela Restaurant">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Sumela Restaurant</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/sumela.png" class="logo"></p>
+            <p class="centered">
+                <strong>Sumela Restaurant</strong><br />
+                805 N. Main St.<br />
+                High Point , NC 27265<br /><br />
+                <a href="tel:366-887-2645">366-887-2645</a><br /><br />
+                <a href="http://www.sumelarestaurant.com">sumelarestaurant.com</a>
+
+            </p>
+            <div class="coupon">
+                <p class="centered">$2.00 off purchase of $20 or more.</p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of The Cozy Cannoli page -->
+    <div data-role="page" id="cannoli" data-title="The Cozy Cannoli">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>The Cozy Cannoli</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/cozycannoli.png" class="logo"></p>
+            <p class="centered">
+                <strong>The Cozy Cannoli</strong><br />
+                2107 Kirkwood St. Suite 101<br />
+                High Point , NC 27262<br /><br />
+                <a href="tel:366-861-2099">366-861-2099</a><br /><br />
+                <a href="http://www.thecozycannoli.com">thecoztcannoli.com</a>
+
+            </p>
+            <div class="coupon">
+                <p class="centered">10% off your purchase</p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of The Peppermill Cafe page -->
+    <div data-role="page" id="peppermill" data-title="The Peppermill Cafe">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>The Peppermill Cafe</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/peppermill.png" class="logo"></p>
+            <p class="centered">
+                <strong>The Peppermill Cafe</strong><br />
+                2600 South Main St.<br />
+                High Point , NC 27263<br /><br />
+                <a href="tel:366-885-8101">366-885-8101</a><br /><br />
+                <a href="http://www.peppermillcafe.com">peppermillcafe.com</a>
+
+            </p>
+            <div class="coupon">
+                <div class="centered">Buy any Breakfast Platter and Get the second Breakfst Platter of Equal or Lesser Value FREE</div>
+                <hr />
+                <div class="centered">Buy a Large Greek Marinated Chicken Salad and get a Small Cold Plate FREE
+                </div>
+                <hr />
+                <div class="centered">DOLLAR DAYS EXPIRES DECEMBER 31, 2019<br />
+                    $2 OFF ANY $25 ORDER<br />
+                    $3 OFF ANY $30 ORDER<br />
+                    $4 OFF ANY $45 ORDER<br />
+                    $5 OFF ANY $50 ORDER
+                </div>
+                <hr />
+                <div class="centered">Not to be used with any other Special or Offer. Discounts Do Not Apply. Charges subject to additions and taxes.
+                </div>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of Wicked Taco page -->
+    <div data-role="page" id="wickedtaco" data-title="Wicked Taco">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Wicked Taco</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/wickedtaco.png" class="logo"></p>
+            <p class="centered">
+                <strong>Wicked Taco</strong><br />
+                2005 N. Main St. Suite 111<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-307-4626">366-307-4626</a><br /><br />
+                <a href="http://www.eatwickedtaco.com">eatwickedtaco.com</a>
+
+            </p>
+            <div class="coupon">
+                <p class="centered">Free Side w/ purchase of Taco &amp; drink</p>
+            </div>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+
+    <!-- ===========ATTRACTIONS AND SERVICES===================== -->
+
+    <!-- Start of Attractions &amp; Services page -->
+    <div data-role="page" id="services" data-title="Attractions &amp; Services">
+
+        <div data-role="header" data-position="fixed">
+            <a href="#home" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Passport to Savings</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+
+            <h3 class="centered">Attractions &amp; Services</h3>
+
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#castle">Castle McCulloch</a>
+                </li>
+                <li>
+                    <a href="#museum">High Point Museum</a>
+                </li>
+                <li>
+                    <a href="#IDA">IDA Christian Books &amp; Gifts</a>
+                </li>
+                <li>
+                    <a href="#kersey">Kersey Valley Attractions</a>
+                </li>
+                <li>
+                    <a href="#linbrook">Linbrook Heritage Estate's Linbrook Hall</a>
+                </li>
+                <li>
+                    <a href="#masters">Master's Design Inc.</a>
+                </li>
+                <li>
+                    <a href="#NCfurnAdvisor">NC Furniture Advisor</a>
+                </li>
+                <li>
+                    <a href="#royal">Royal Limousine</a>
+                </li>
+                <li>
+                    <a href="#simon">Simon Jewelers</a>
+                </li>
+            </ul>
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+
+    <!-- Start of Castle McCulloch page -->
+    <div data-role="page" id="castle" data-title="Castle McCulloch">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Castle McCulloch</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/castlemcculloch.jpg" class="logo"></p>
+            <p class="centered">
+                <strong>Castle McCulloch</strong><br />
+                3925 Kivett Dr.<br />
+                Jamestown, NC 27282<br /><br />
+                <a href="tel:366-887-5413">366-887-5413</a><br /><br />
+                <a href="http://www.castlemcculloch.com">castlemcculloch.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">Receive up to 25% off of your Room Rental! Discount may be applied to any event type including but not limited to: Wedding Ceremonies, Wedding Receptions, Birthday Parties, Corporate Events, Christmas Parties, Baby Showers, Private Events, etc. Event Date Subject to Availability.</div>
+                <hr />
+                <div class="centered">To Redeem this offer, one must visit: CastleMcCulloch.com/contact/ and complete the Event Inquiry form. Please enter the following phrase (<strong>Passport to Savings Discount</strong>) in the body of your message so that we may apply the discount to your Event Quote!</div>
+                <hr />
+                <div class="centered">Event must fall within Monday through Friday and Event Date is Subject to Availability
+                </div>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of High Point Museum page -->
+    <div data-role="page" id="museum" data-title="High Point Museum">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>High Point Museum</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/hpmuseum.png" class="logo"></p>
+            <p class="centered">
+                <strong>High Point Museum</strong><br />
+                1859 E. Lexington Dr.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-885-1859">366-885-1859</a><br /><br />
+                <a href="http://www.highpointmuseum.gov">highpointmuseum.gov</a>
+            </p>
+            <div class="coupon">
+                <p class="centered">$5 off purchase of $25 or more in the Museum Store</p>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of IDA Christian Books &amp; Gifts page -->
+    <div data-role="page" id="IDA" data-title="IDA Christian Books &amp; Gifts">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>IDA Christian Books &amp; Gifts</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/idabooks.png" class="logo"></p>
+            <p class="centered">
+                <strong>IDA Christian Books &amp; Gifts</strong><br />
+                1300 N. Main St.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-434-4663">366-434-4663</a><br /><br />
+                <a href="http://www.idabookstore.com">idabookstore.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">$5 off a $20 purchase</div>
+                <hr />
+                <div class="centered">Not valid w/ other offers or special orders</div>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of Kersey Valley Attractions page -->
+    <div data-role="page" id="kersey" data-title="Kersey Valley Attractions">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Kersey Valley Attractions</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/kerseyvalley.png" class="logo"></p>
+            <p class="centered">
+                <strong>Kersey Valley Attractions</strong><br />
+                1615 Kersey Valley Rd.<br />
+                Archdale, NC 27263<br /><br />
+                <a href="tel:366-431-1700">366-431-1700</a><br /><br />
+                <a href="http://www.kerseyvalley.com">kerseyvalley.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">Buy One Get One FREE First Class Zipline</div>
+                <hr />
+                <div class="centered">Buy One Get One FREE Escape Game</div>
+                <hr />
+                <div class="centered"> Buy One Get One FREE Laser Tag<br/>2hr session</div>
+            </div><!-- /coupon -->
+
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- Start of Linbrook Heritage Estate's Linbrook Hall page -->
+    <div data-role="page" id="linbrook" data-title="Linbrook Heritage Estate's Linbrook Hall">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Linbrook Heritage Estate's Linbrook Hall</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/linbrook.png" class="logo"></p>
+            <p class="centered">
+                <strong>Linbrook Heritage Estate's Linbrook Hall</strong><br />
+                5297 Snyder Country Rd.<br />
+                Trinity, NC 27370<br /><br />
+                <a href="tel:366-861-6959">366-861-6959</a><br /><br />
+                <a href="http://www.linbrookheritageestate.com">linbrookheritageestate.com</a>
+            </p>
+            <div class="coupon">
+                <p class="centered">Guided Group Tours of Linbrook Hall, year-round, by reservation, $5 Off Admissions</p>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+
+    <!-- Start of Master's Design, Inc. page -->
+    <div data-role="page" id="masters" data-title="Master's Design, Inc.">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Master's Design, Inc.</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/mastersdesign.png" class="logo"></p>
+            <p class="centered">
+                <strong>Master's Design, Inc.</strong><br />
+                202 W. Lexington Ave.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-239-6233">366-239-6233</a><br /><br />
+                <a href="http://www.mastersdesigninc.com">mastersdesigninc.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">1 hour free consultation for Interior Design Services</div>
+                <hr />
+                <div class="centered">If out of state or long distance, 1 hour free phone call or Skype to address your immediate needs.</div>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of NC Furniture Advisor page -->
+    <div data-role="page" id="NCfurnAdvisor" data-title="NC Furniture Advisor">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>NC Furniture Advisor</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/ncfurnadvisor.png" class="logo"></p>
+            <p class="centered">
+                <strong>NC Furniture Advisor</strong><br />
+                1108 Dover Rd.<br />
+                Greensboro, NC 27408<br /><br />
+                <a href="tel:366-404-1040">366-404-1040</a><br /><br />
+                <a href="http://www.ncfurnitureadvisor.com">ncfurnitureadvisor.com</a>
+            </p>
+            <div class="coupon">
+                <p class="centered">Free Furniture Tour of High Point's best discounters and showrooms.</p>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of Royal Limousine page -->
+    <div data-role="page" id="royal" data-title="Royal Limousine">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Royal Limousine</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/royallimo.png" class="logo"></p>
+            <p class="centered">
+                <strong>Royal Limousine</strong><br />
+                621 Greensboro Rd.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-899-7777">366-899-7777</a><br /><br />
+                <a href="http://www.royallimonc.com">royallimonc.com</a>
+            </p>
+            <div class="coupon">
+                <p class="centered">10% off any transportation service</p>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <!-- Start of Simon Jewelers page -->
+    <div data-role="page" id="simon" data-title="Simon Jewelers">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse">&#9664;</a>
+            <h2>Simon Jewelers</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p class="centered"><img src="img/simon.png" class="logo"></p>
+            <p class="centered">
+                <strong>Simon Jewelers</strong><br />
+                1345 N. Main St. #108<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:366-887-9394">366-887-9394</a><br /><br />
+                <a href="http://www.simonjewelers.com">simonjewelers.com</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">Complimentary Jewelry Cleaning</div>
+                <hr />
+                <div class="centered">Inspection of Jewelry</div>
+                <hr />
+                <div class="centered">Polishing Cloth Gift</div>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>High Point CVB</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <!-- ================ -->
+</body>
+
+</html>

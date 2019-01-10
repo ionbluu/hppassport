@@ -1,0 +1,27 @@
+.centered {
+    text-align: center;
+}
+
+.coupon {
+    border: thick dashed #cc0000;
+    padding: 1em;
+    max-width: 600px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.hpTitle {
+    color: darkblue;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+#copyright {
+    font-size: .6em;
+}
