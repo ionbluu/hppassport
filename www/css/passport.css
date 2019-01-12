@@ -6,7 +6,7 @@
     border: thick dashed #cc0000;
     padding: 1em;
     max-width: 600px;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -23,5 +23,30 @@
 }
 
 #copyright {
-    font-size: .6em;
+    font-size: .75em;
+}
+
+.fa-bed {
+    color: royalblue;
+}
+
+.fa-chair {
+    color: darkgoldenrod;
+}
+
+.fa-utensils {
+    color: cadetblue;
+}
+
+.fa-handshake {
+    color: darksalmon;
+}
+
+.fa-info-circle {
+    color: darkblue;
+}
+
+.mainContent {
+    max-width: 600px;
+    margin: 0 auto;
 }
