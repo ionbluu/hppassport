@@ -13,6 +13,7 @@
         $(document).on('mobileinit', function() {
             $.mobile.defaultPageTransition = 'slide';
         });
+
     </script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="phonegap.js"></script>
@@ -25,6 +26,7 @@
             // Phonegap is ready so call the APIs
             window.open = cordova.InAppBrowser.open;
         }
+
     </script>
 
 </head>
@@ -36,7 +38,7 @@
         <div data-role="header" data-position="fixed">
             <h1>Passport to Savings</h1>
         </div><!-- header -->
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/goldicon.png" class="logo" /></p>
 
             <p class="hpTitle centered">High Point Passport to Savings</p>
@@ -88,28 +90,29 @@
             <a href="#home" class="ui-btn" data-direction="reverse">&#9664;</a>
             <h2>About This App</h2>
         </div><!-- /header -->
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
 
             <p class="centered"><img src="img/hpcvb.png" /></p>
 
             <p class="centered">For more information, contact the High Point Convention &amp; Visitors Bureau at <br /><a href="tel:336-884-5255">336-884-5255</a><br /><br />or visit us on the web at<br /><a href="http://www.highpoint.org">highpoint.org</a></p>
 
             <p>&nbsp;</p>
-             <p id="copyright" class="centered">
+            <p id="copyright" class="centered">
                 <script type="text/javascript">
                     copyright = new Date();
                     update = copyright.getFullYear();
                     document.write("Copyright &copy; " + update + "<br/> High Point Convention &amp; Visitors Bureau <br/> All rights reserved.");
+
                 </script>
             </p>
             <p>&nbsp;</p>
- <p>&nbsp;</p>
+            <p>&nbsp;</p>
 
             <p class="centered"><img src="img/ionbluu-45x45.png"><br />Built by <a href="http://ionbluu.com">ionbluu</a></p>
             <p>&nbsp;</p>
 
 
-           
+
 
         </div><!-- /main -->
         <div data-role="footer" data-position="fixed">
@@ -136,7 +139,7 @@
             <h2>Passport to Savings</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
 
             <h3 class="centered">Lodging</h3>
 
@@ -169,7 +172,7 @@
             <h2>Seven Oaks Bed &amp; Breakfast</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img class="logo" src="img/7oaks.jpg"></p>
             <p class="centered">
                 <strong>Seven Oaks Bed &amp; Breakfast</strong><br />
@@ -207,7 +210,7 @@
             <h2>Wingate by Wyndham</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img class="logo" src="img/wingate.png"></p>
             <p class="centered">
                 <strong>Wingate by Wyndham</strong><br />
@@ -249,7 +252,7 @@
             <h2>Passport to Savings</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
 
             <h3 class="centered">Furniture</h3>
 
@@ -294,7 +297,7 @@
             <h2>Ashley Interiors / Braxton Culler</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/braxtonculler.png" class="logo"></p>
             <p class="centered">
                 <strong>Ashley Interiors / Braxton Culler</strong><br />
@@ -330,7 +333,7 @@
             <h2>Furnishings 411</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img class="logo" src="img/furnishings411.png"></p>
             <p class="centered">
                 <strong>Furnishings 411</strong><br />
@@ -367,7 +370,7 @@
             <h2>Furnitureland South</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/furniturelandsouth.png" class="logo"></p>
             <p class="centered">
                 <strong>Furnitureland South</strong><br />
@@ -404,7 +407,7 @@
             <h2>High Point Furniture Finds</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/hpfurnfinds.png" class="logo"></p>
             <p class="centered">
                 <strong>High Point Furniture Finds</strong><br />
@@ -442,7 +445,7 @@
             <h2>High Point Furniture Sales</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/hpfurnsales.jpg" class="logo"></p>
             <p class="centered">
                 <strong>High Point Furniture Sales</strong><br />
@@ -479,7 +482,7 @@
             <h2>High Point Furniture Sales Clearance Center</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/hpfurnsales.jpg" class="logo"></p>
             <p class="centered">
                 <strong>High Point Furniture Sales Clearance Center</strong><br />
@@ -521,7 +524,7 @@
             <h2>Passport to Savings</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
 
             <h3 class="centered">Food &amp; Drink</h3>
 
@@ -588,7 +591,7 @@
             <h2>Alexandria's Bistro &amp; Catering</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/alexandrias.jpg" class="logo"></p>
             <p class="centered">
                 <strong>Alexandria's Bistro &amp; Catering</strong><br />
@@ -623,7 +626,7 @@
             <h2>Carter Brothers BBQ #1</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/carterbros.jpg" class="logo"></p>
             <p class="centered">
                 <strong>Carter Brothers BBQ (N. Main)</strong><br />
@@ -660,7 +663,7 @@
             <h2>Carter Brothers BBQ #2</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/carterbros.jpg" class="logo"></p>
             <p class="centered">
                 <strong>Carter Brothers BBQ (Samet Dr.)</strong><br />
@@ -697,7 +700,7 @@
             <h2>Casa De Soto Mexican Cuisine</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/casa-de-sotos_0.jpg" class="logo"></p>
             <p class="centered">
                 <strong>Casa De Soto Mexican Cuisine</strong><br />
@@ -737,7 +740,7 @@
             <h2>DeBeen Espresso</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/debeen.png" class="logo"></p>
             <p class="centered">
                 <strong>DeBeen Espresso</strong><br />
@@ -777,7 +780,7 @@
             <h2>Full Moon Oyster Bar</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/fullmoon.png" class="logo"></p>
             <p class="centered">
                 <strong>Full Moon Oyster Bar</strong><br />
@@ -812,7 +815,7 @@
             <h2>Rome Pizza</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/romepizza.png" class="logo"></p>
             <p class="centered">
                 <strong>Rome Pizza</strong><br />
@@ -848,7 +851,7 @@
             <h2>Sammy G's Tavern</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/sammyg.png" class="logo"></p>
             <p class="centered">
                 <strong>Sammy G's Tavern</strong><br />
@@ -883,7 +886,7 @@
             <h2>Steak Street</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/steakstreet.png" class="logo"></p>
             <p class="centered">
                 <strong>Steak Street</strong><br />
@@ -920,7 +923,7 @@
             <h2>Sumela Restaurant</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/sumela.png" class="logo"></p>
             <p class="centered">
                 <strong>Sumela Restaurant</strong><br />
@@ -956,7 +959,7 @@
             <h2>The Cozy Cannoli</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/cozycannoli.png" class="logo"></p>
             <p class="centered">
                 <strong>The Cozy Cannoli</strong><br />
@@ -991,7 +994,7 @@
             <h2>The Peppermill Cafe</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/peppermill.png" class="logo"></p>
             <p class="centered">
                 <strong>The Peppermill Cafe</strong><br />
@@ -1039,7 +1042,7 @@
             <h2>Wicked Taco</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/wickedtaco.png" class="logo"></p>
             <p class="centered">
                 <strong>Wicked Taco</strong><br />
@@ -1079,7 +1082,7 @@
             <h2>Passport to Savings</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
 
             <h3 class="centered">Attractions &amp; Services</h3>
 
@@ -1136,7 +1139,7 @@
             <h2>Castle McCulloch</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/castlemcculloch.jpg" class="logo"></p>
             <p class="centered">
                 <strong>Castle McCulloch</strong><br />
@@ -1176,7 +1179,7 @@
             <h2>High Point Museum</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/hpmuseum.png" class="logo"></p>
             <p class="centered">
                 <strong>High Point Museum</strong><br />
@@ -1211,7 +1214,7 @@
             <h2>IDA Christian Books &amp; Gifts</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/idabooks.png" class="logo"></p>
             <p class="centered">
                 <strong>IDA Christian Books &amp; Gifts</strong><br />
@@ -1248,7 +1251,7 @@
             <h2>Kersey Valley Attractions</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/kerseyvalley.png" class="logo"></p>
             <p class="centered">
                 <strong>Kersey Valley Attractions</strong><br />
@@ -1287,7 +1290,7 @@
             <h2>Linbrook Heritage Estate's Linbrook Hall</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/linbrook.png" class="logo"></p>
             <p class="centered">
                 <strong>Linbrook Heritage Estate's Linbrook Hall</strong><br />
@@ -1323,7 +1326,7 @@
             <h2>Master's Design, Inc.</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/mastersdesign.png" class="logo"></p>
             <p class="centered">
                 <strong>Master's Design, Inc.</strong><br />
@@ -1360,7 +1363,7 @@
             <h2>NC Furniture Advisor</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/ncfurnadvisor.png" class="logo"></p>
             <p class="centered">
                 <strong>NC Furniture Advisor</strong><br />
@@ -1395,7 +1398,7 @@
             <h2>Royal Limousine</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/royallimo.png" class="logo"></p>
             <p class="centered">
                 <strong>Royal Limousine</strong><br />
@@ -1430,7 +1433,7 @@
             <h2>Simon Jewelers</h2>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content mainContent">
             <p class="centered"><img src="img/simon.png" class="logo"></p>
             <p class="centered">
                 <strong>Simon Jewelers</strong><br />
