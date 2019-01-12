@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>High Point Passport to Savings</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="css/passport.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -45,28 +46,35 @@
 
             <ul data-role="listview" data-count-theme="a" data-inset="true">
                 <li>
-                    <a href="#furniture" class="ui-corner-none">Furniture <span class="ui-li-count">6</span></a>
+                    <a href="#furniture" class="ui-corner-none"><i class="fas fa-chair"></i> &nbsp; Furniture <span class="ui-li-count">6</span></a>
                 </li>
                 <li>
-                    <a href="#lodging">Lodging <span class="ui-li-count">2</span></a>
+                    <a href="#lodging"><i class="fas fa-bed"></i> &nbsp; Lodging <span class="ui-li-count">2</span></a>
                 </li>
                 <li>
-                    <a href="#food">Food &amp; Drink <span class="ui-li-count">13</span></a>
+                    <a href="#food"><i class="fas fa-utensils"></i> &nbsp; Food &amp; Drink <span class="ui-li-count">13</span></a>
                 </li>
                 <li>
-                    <a href="#services" class="ui-corner-none">Attractions &amp; Services <span class="ui-li-count">9</span></a>
+                    <a href="#services" class="ui-corner-none"><i class="far fa-handshake"></i> &nbsp; Attractions &amp; Services <span class="ui-li-count">9</span></a>
                 </li>
             </ul>
             <br />
             <ul data-role="listview" data-count-theme="a" data-inset="true">
                 <li>
-                    <a href="#aboutApp" class="ui-corner-none">About This App</a>
+                    <a href="#aboutApp" class="ui-corner-none"><i class="fas fa-info-circle"></i> &nbsp; About This App</a>
                 </li>
 
             </ul>
         </div><!-- /main -->
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
         </div>
     </div><!-- page -->
 
@@ -84,22 +92,35 @@
 
             <p class="centered"><img src="img/hpcvb.png" /></p>
 
-            <p class="centered">For more information contact the High Point Convention &amp; Visitors Bureau at <br /><a href="tel:336-884-5255">336-884-5255</a><br /><br />or visit us on the web at<br /><a href="http://www.highpoint.org">highpoint.org</a></p>
+            <p class="centered">For more information, contact the High Point Convention &amp; Visitors Bureau at <br /><a href="tel:336-884-5255">336-884-5255</a><br /><br />or visit us on the web at<br /><a href="http://www.highpoint.org">highpoint.org</a></p>
 
             <p>&nbsp;</p>
-            <p>&nbsp;</p>
-
-            <p id="copyright" class="centered">
+             <p id="copyright" class="centered">
                 <script type="text/javascript">
                     copyright = new Date();
                     update = copyright.getFullYear();
-                    document.write("Copyright &copy;" + update + " High Point Convention &amp; Visitors Bureau,  All rights reserved.");
+                    document.write("Copyright &copy; " + update + "<br/> High Point Convention &amp; Visitors Bureau <br/> All rights reserved.");
                 </script>
             </p>
+            <p>&nbsp;</p>
+ <p>&nbsp;</p>
+
+            <p class="centered"><img src="img/ionbluu-45x45.png"><br />Built by <a href="http://ionbluu.com">ionbluu</a></p>
+            <p>&nbsp;</p>
+
+
+           
 
         </div><!-- /main -->
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
         </div>
     </div><!-- page -->
 
@@ -128,11 +149,17 @@
                 </li>
             </ul>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
     <!-- Start of Seven Oaks page -->
@@ -157,11 +184,17 @@
                 </p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -189,11 +222,17 @@
                 <div class="centered">Blackout dates where this discount will not be applicable: April 4-10, 2019; October 17-23, 2019; April 16-22, 2020; October 15-20, 2020</div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -235,11 +274,17 @@
                 </li>
             </ul>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
     <!-- Start of Ashley Interiors page -->
@@ -264,11 +309,17 @@
                 <div class="centered"> Does not apply during our pre-market sale or on any Big Green Egg purchases</div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -294,11 +345,17 @@
                 <div class="centered">Must show this coupon on app.</div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -325,11 +382,17 @@
                 <div class="centered">See your design consultant for details.</div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -356,11 +419,17 @@
                 <div class="centered">Not valid on sale items or special orders.</div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -388,11 +457,17 @@
                 </p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -419,11 +494,17 @@
                 <div class="centered">At Brentwood Street Value &amp; Clearance Store.</div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -486,11 +567,17 @@
                 </li>
             </ul>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -515,11 +602,17 @@
                 </p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -545,11 +638,17 @@
                 <div class="centered">Dine In Only. One per card holder.</div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -577,11 +676,17 @@
                 </div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -610,11 +715,17 @@
                 <div class="centered">Can't be used with other discounts.<br /> 1 coupon per party.<br /> Excludes alcohol.</div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -645,11 +756,17 @@
                 <div class="centered">Only 1 discount per transaction.</div>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -674,11 +791,17 @@
                 <p class="centered">10% discount off the meal not including alcohol.</p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -703,11 +826,17 @@
                 <p class="centered">10% off from the menu price.</p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -733,11 +862,17 @@
                 <p class="centered">Free Loukmades (Greek dessert) with the purchase of an entree. One per table.</p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -762,11 +897,17 @@
                 <p class="centered">Free appetizer with the purchase of an entree.</p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -793,11 +934,17 @@
                 <p class="centered">$2.00 off purchase of $20 or more.</p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -823,11 +970,17 @@
                 <p class="centered">10% off your purchase</p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -865,11 +1018,17 @@
                 </div>
             </div><!-- /coupon -->
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -894,11 +1053,17 @@
                 <p class="centered">Free Side w/ purchase of Taco &amp; drink</p>
             </div>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -948,11 +1113,17 @@
                 </li>
             </ul>
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -983,11 +1154,17 @@
                 </div>
             </div><!-- /coupon -->
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -1012,11 +1189,17 @@
                 <p class="centered">$5 off purchase of $25 or more in the Museum Store</p>
             </div><!-- /coupon -->
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -1043,11 +1226,17 @@
                 <div class="centered">Not valid w/ other offers or special orders</div>
             </div><!-- /coupon -->
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -1073,15 +1262,21 @@
                 <hr />
                 <div class="centered">Buy One Get One FREE Escape Game</div>
                 <hr />
-                <div class="centered"> Buy One Get One FREE Laser Tag<br/>2hr session</div>
+                <div class="centered"> Buy One Get One FREE Laser Tag<br />2hr session</div>
             </div><!-- /coupon -->
 
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -1105,11 +1300,17 @@
                 <p class="centered">Guided Group Tours of Linbrook Hall, year-round, by reservation, $5 Off Admissions</p>
             </div><!-- /coupon -->
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -1137,11 +1338,17 @@
                 <div class="centered">If out of state or long distance, 1 hour free phone call or Skype to address your immediate needs.</div>
             </div><!-- /coupon -->
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -1166,11 +1373,17 @@
                 <p class="centered">Free Furniture Tour of High Point's best discounters and showrooms.</p>
             </div><!-- /coupon -->
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -1195,11 +1408,17 @@
                 <p class="centered">10% off any transportation service</p>
             </div><!-- /coupon -->
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
@@ -1228,11 +1447,17 @@
                 <div class="centered">Polishing Cloth Gift</div>
             </div><!-- /coupon -->
         </div><!-- /main -->
-
         <div data-role="footer" data-position="fixed">
-            <h4>High Point CVB</h4>
-        </div><!-- /footer -->
-    </div><!-- /page -->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
 
 
 
