@@ -23,34 +23,12 @@
     <preference name="android-targetSdkVersion" value="26" />
 
     <icon src="res/icon.png" />
-    
+
     <platform name="ios">
 
         <!-- ICONS -->
-        
+
         <icon src="res/ios/icon/icon-1024.png" width="1024" height="1024" />
-
-        <!-- iPhone 6 / 6+ -->
-        <icon src="icon-60@3x.png" width="180" height="180" />
-
-        <!-- iPhone / iPod Touch  -->
-        <icon src="icon-60.png" width="60" height="60" />
-        <icon src="icon-60@2x.png" width="120" height="120" />
-
-        <!-- iPad -->
-        <icon src="icon-76.png" width="76" height="76" />
-        <icon src="icon-76@2x.png" width="152" height="152" />
-        <icon src="icon-83.5@2x.png" width="167" height="167" />
-
-        <!-- Settings Icon -->
-        <icon src="icon-small.png" width="29" height="29" />
-        <icon src="icon-small@2x.png" width="58" height="58" />
-        <icon src="icon-small@3x.png" width="87" height="87" />
-
-        <!-- Spotlight Icon -->
-        <icon src="icon-40.png" width="40" height="40" />
-        <icon src="icon-40@2x.png" width="80" height="80" />
-        <icon src="icon-40@3x.png" width="120" height="120" />
 
         <!-- Splash Screens -->
 
@@ -73,7 +51,6 @@
         <icon src="res/android/icon/xhdpi.png" qualifier="xhdpi" />
         <icon src="res/android/icon/xxhdpi.png" qualifier="xxhdpi" />
         <icon src="res/android/icon/xxxhdpi.png" qualifier="xxxhdpi" />
-        <icon src="res/android/icon/fr-xxhdpi.png" qualifier="fr-xxhdpi" />
 
         <!-- Splash Screens -->
 
