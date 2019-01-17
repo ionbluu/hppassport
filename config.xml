@@ -23,11 +23,12 @@
     <preference name="android-targetSdkVersion" value="26" />
 
     <icon src="res/icon.png" />
-    <icon src="res/ios/icon-1024.png" width="1024" height="1024" />
-
+    
     <platform name="ios">
 
         <!-- ICONS -->
+        
+        <icon src="res/ios/icon/icon-1024.png" width="1024" height="1024" />
 
         <!-- iPhone 6 / 6+ -->
         <icon src="icon-60@3x.png" width="180" height="180" />
