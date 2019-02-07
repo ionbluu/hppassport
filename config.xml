@@ -50,9 +50,9 @@
         <icon src="www/res/ios/icon/icon-small@3x.png" width="87" height="87" />
 
         <!-- Spotlight Icon -->
-        <icon src="res/ios/icon/icon-40.png" width="40" height="40" />
-        <icon src="res/ios/icon/icon-40@2x.png" width="80" height="80" />
-        <icon src="res/ios/icon/icon-40@3x.png" width="120" height="120" />
+        <icon src="www/res/ios/icon/icon-40.png" width="40" height="40" />
+        <icon src="www/res/ios/icon/icon-40@2x.png" width="80" height="80" />
+        <icon src="www/res/ios/icon/icon-40@3x.png" width="120" height="120" />
 
         <!-- Splash Screens -->
 
