@@ -9,59 +9,84 @@
         ionbluu
     </author>
 
-    <preference name="phonegap-version" value="cli-8.1.1" />
-    <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="26" />
-
-
+    <platform name="ios" />
+    <platform name="android" />
     <content src="index.html" />
     <access origin="*" />
 
+    <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="Orientation" value="portrait" />
     <preference name="Fullscreen" value="true" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="exit-on-suspend" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-targetSdkVersion" value="26" />
 
+    <icon src="res/icon.png" />
+    <icon src="res/icon-1024.png" width="1024" height="1024" />
 
-    <icon src="www/res/icon.png" />
+    <!-- ======================================== -->
 
     <platform name="ios">
 
         <!-- ICONS -->
 
-        <icon src="www/res/ios/icon/icon-1024.png" width="1024" height="1024" />
+        <!-- iPhone 6 / 6+ -->
+        <icon src="res/ios/icon/icon-60@3x.png" width="180" height="180" />
+
+        <!-- iPhone / iPod Touch  -->
+        <icon src="res/ios/icon/icon-60.png" width="60" height="60" />
+        <icon src="res/ios/icon/icon-60@2x.png" width="120" height="120" />
+
+        <!-- iPad -->
+        <icon src="res/ios/icon/icon-76.png" width="76" height="76" />
+        <icon src="res/ios/icon/icon-76@2x.png" width="152" height="152" />
+        <icon src="res/ios/icon/icon-83.5@2x.png" width="167" height="167" />
+
+        <!-- Settings Icon -->
+        <icon src="res/ios/icon/icon-small.png" width="29" height="29" />
+        <icon src="res/ios/icon/icon-small@2x.png" width="58" height="58" />
+        <icon src="res/ios/icon/icon-small@3x.png" width="87" height="87" />
+
+        <!-- Spotlight Icon -->
+        <icon src="res/ios/icon/icon-40.png" width="40" height="40" />
+        <icon src="res/ios/icon/icon-40@2x.png" width="80" height="80" />
+        <icon src="res/ios/icon/icon-40@3x.png" width="120" height="120" />
 
         <!-- Splash Screens -->
 
-        <splash src="www/res/ios/splash/Default-iphone.png" width="320" height="480" />
-        <splash src="www/res/ios/splash/Default@2x-iphone.png" width="640" height="960" />
-        <splash src="www/res/ios/splash/Default-Portrait-ipad.png" width="768" height="1024" />
-        <splash src="www/res/ios/splash/Default-Portrait@2x-ipad.png" width="1536" height="2048" />
-        <splash src="www/res/ios/splash/Default-568h@2x-iphone.png" width="640" height="1136" />
-        <splash src="www/res/ios/splash/Default-667h.png" width="750" height="1334" />
-        <splash src="www/res/ios/splash/Default-736h.png" width="1242" height="2208" />
+        <splash src="res/ios/splash/Default-iphone.png" width="320" height="480" />
+        <splash src="res/ios/splash/Default@2x-iphone.png" width="640" height="960" />
+        <splash src="res/ios/splash/Default-Portrait-ipad.png" width="768" height="1024" />
+        <splash src="res/ios/splash/Default-Portrait@2x-ipad.png" width="1536" height="2048" />
+        <splash src="res/ios/splash/Default-568h@2x-iphone.png" width="640" height="1136" />
+        <splash src="res/ios/splash/Default-667h.png" width="750" height="1334" />
+        <splash src="res/ios/splash/Default-736h.png" width="1242" height="2208" />
     </platform>
+
+    <!-- ======================================== -->
 
     <platform name="android">
 
         <!-- ICONS -->
 
-        <icon src="www/res/android/icon/ldpi.png" qualifier="ldpi" />
-        <icon src="www/res/android/icon/mdpi.png" qualifier="mdpi" />
-        <icon src="www/res/android/icon/hdpi.png" qualifier="hdpi" />
-        <icon src="www/res/android/icon/xhdpi.png" qualifier="xhdpi" />
-        <icon src="www/res/android/icon/xxhdpi.png" qualifier="xxhdpi" />
-        <icon src="www/res/android/icon/xxxhdpi.png" qualifier="xxxhdpi" />
+        <icon src="res/android/icon/ldpi.png" qualifier="ldpi" />
+        <icon src="res/android/icon/mdpi.png" qualifier="mdpi" />
+        <icon src="res/android/icon/hdpi.png" qualifier="hdpi" />
+        <icon src="res/android/icon/xhdpi.png" qualifier="xhdpi" />
+        <icon src="res/android/icon/xxhdpi.png" qualifier="xxhdpi" />
+        <icon src="res/android/icon/xxxhdpi.png" qualifier="xxxhdpi" />
+        <icon src="res/android/icon/fr-xxhdpi.png" qualifier="fr-xxhdpi" />
 
         <!-- Splash Screens -->
 
-        <splash src="www/res/android/splash/hdpi.png" density="port-hdpi" />
-        <splash src="www/res/android/splash/ldpi.png" density="port-ldpi" />
-        <splash src="www/res/android/splash/mdpi.png" density="port-mdpi" />
-        <splash src="www/res/android/splash/xhdpi.png" density="port-xhdpi" />
-        <splash src="www/res/android/splash/xxhdpi.png" density="port-xxhdpi" />
-        <splash src="www/res/android/splash/xxxhdpi.png" density="port-xxxhdpi" />
+        <splash src="res/android/splash/hdpi.png" density="port-hdpi" />
+        <splash src="res/android/splash/ldpi.png" density="port-ldpi" />
+        <splash src="res/android/splash/mdpi.png" density="port-mdpi" />
+        <splash src="res/android/splash/xhdpi.png" density="port-xhdpi" />
+        <splash src="res/android/splash/xxhdpi.png" density="port-xxhdpi" />
+        <splash src="res/android/splash/xxxhdpi.png" density="port-xxxhdpi" />
     </platform>
 
     <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
