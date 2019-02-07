@@ -23,7 +23,7 @@
     <preference name="android-minSdkVersion" value="16" />
     <preference name="android-targetSdkVersion" value="26" />
 
-    <icon src="res/icon.png" />
+    <icon src="www/res/icon.png" />
     <icon src="res/icon-1024.png" width="1024" height="1024" />
 
     <!-- ======================================== -->
