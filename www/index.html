@@ -27,6 +27,13 @@
             window.open = cordova.InAppBrowser.open;
         }
 
+        $(document).on('click', 'a', function(e) {
+            if ($(this).attr('target') === '_blank') {
+                window.open($(this).attr('href'), '_system', 'location=no');
+                e.preventDefault();
+            }
+        });
+
     </script>
 
 </head>
@@ -80,7 +87,7 @@
     </div><!-- page -->
 
 
-     <!-- =================== About This App ============== -->
+    <!-- =================== About This App ============== -->
 
     <!-- Start of About page -->
     <div data-role="page" id="aboutApp" data-title="About This App">
@@ -97,7 +104,7 @@
                 1630 North Main St.<br />
                 High Point, NC 27262<br /><br />
                 or call us at:
-                <a href="tel:336-884-5255">336-884-5255</a><br /><br />We are on the web at<br /><a href="http://www.highpoint.org">highpoint.org</a></p>
+                <a href="tel:336-884-5255" target="_blank">336-884-5255</a><br /><br />We are on the web at<br /><a href="http://www.highpoint.org" target="_blank">highpoint.org</a></p>
 
 
 
@@ -121,7 +128,7 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
 
-            <p class="centered"><img src="img/ionbluu-45x45.png"><br />Built by <a href="http://ionbluu.com">ionbluu</a></p>
+            <p class="centered"><img src="img/ionbluu-45x45.png"><br />Built by <a href="http://ionbluu.com" target="_blank">ionbluu</a></p>
             <p>&nbsp;</p>
 
 
@@ -226,11 +233,11 @@
                 <strong>Seven Oaks Bed &amp; Breakfast</strong><br />
                 833 Old Mill Rd.<br />
                 High Point, NC 27265<br /><br />
-                <a href="tel:336-899-6257">336-899-6257</a><br /><br />
-                <a href="http://www.7oaksbedandbreakfast.com">7oaksbedandbreakfast.com</a>
+                <a href="tel:336-899-6257" target="_blank">336-899-6257</a><br /><br />
+                <a href="http://www.7oaksbedandbreakfast.com" target="_blank">7oaksbedandbreakfast.com</a>
             </p>
             <div class="coupon">
-                <p class="centered">Visit <a href="http://www.7oaksbedandbreakfast.com">7oaksbedandbreakfast.com</a> <br />
+                <p class="centered">Visit <a href="http://www.7oaksbedandbreakfast.com" target="_blank">7oaksbedandbreakfast.com</a> <br />
                     Click on reservations, book your room, then click on your choice of discounts from the left sidebar.
                 </p>
             </div>
@@ -264,8 +271,8 @@
                 <strong>Wingate by Wyndham</strong><br />
                 3901 Sedgebrook St.<br />
                 High Point, NC 27265<br /><br />
-                <a href="tel:336-812-8787">336-812-8787</a><br /><br />
-                <a href="http://www.guestreservations.com/wingate-by-wyndham-high-point/">guestreservations.com/wingate-by-wyndham-high-point</a>
+                <a href="tel:336-812-8787" target="_blank">336-812-8787</a><br /><br />
+                <a href="http://www.guestreservations.com/wingate-by-wyndham-high-point/" target="_blank">guestreservations.com/wingate-by-wyndham-high-point</a>
             </p>
             <div class="coupon">
                 <div class="centered">10% discount off of the regular rate for the day</div>
@@ -351,8 +358,8 @@
                 <strong>Ashley Interiors / Braxton Culler</strong><br />
                 310 South Elm St.<br />
                 High Point, NC 27260<br /><br />
-                <a href="tel:366-889-7573">366-889-7573</a><br /><br />
-                <a href="http://www.braxtonculler.com">braxtonculler.com</a>
+                <a href="tel:366-889-7573" target="_blank">366-889-7573</a><br /><br />
+                <a href="http://www.braxtonculler.com" target="_blank">braxtonculler.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">Extra 10% off with coupon</div>
@@ -387,7 +394,7 @@
                 <strong>Furnishings 411</strong><br />
                 1937 W. Green Dr.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-689-3002">366-689-3002</a><br /><br />
+                <a href="tel:366-689-3002" target="_blank">366-689-3002</a><br /><br />
                 <a href="http://www.furnishings411.com">furnishings411.com</a>
             </p>
             <div class="coupon">
@@ -424,8 +431,8 @@
                 <strong>Furnitureland South</strong><br />
                 5635 Riverdale Drive<br />
                 Jamestown, NC 27282<br /><br />
-                <a href="tel:366-822-3000">366-822-3000</a><br /><br />
-                <a href="http://www.furniturelandsouth.com">furniturelandsouth.com</a>
+                <a href="tel:366-822-3000" target="_blank">366-822-3000</a><br /><br />
+                <a href="http://www.furniturelandsouth.com" target="_blank">furniturelandsouth.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">10% off one special order item with your complimentary design consultation.</div>
@@ -461,8 +468,8 @@
                 <strong>High Point Furniture Finds</strong><br />
                 1300 N. Main St.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-886-4663">366-886-4663</a><br /><br />
-                <a href="http://www.highpointfurniturefinds.com">highpointfurniturefinds.com</a>
+                <a href="tel:366-886-4663" target="_blank">366-886-4663</a><br /><br />
+                <a href="http://www.highpointfurniturefinds.com" target="_blank">highpointfurniturefinds.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">10% off $500 purchase or more.</div>
@@ -499,8 +506,8 @@
                 <strong>High Point Furniture Sales</strong><br />
                 2000 Baker Rd.<br />
                 High Point, NC 27260<br /><br />
-                <a href="tel:366-841-5664">366-841-5664</a><br /><br />
-                <a href="http://www.highpointfurnituresales.com">highpointfurnituresales.com</a>
+                <a href="tel:366-841-5664" target="_blank">366-841-5664</a><br /><br />
+                <a href="http://www.highpointfurnituresales.com" target="_blank">highpointfurnituresales.com</a>
             </p>
             <div class="coupon">
                 <p class="centered">10% off all Floor Stock Furniture and Floor Stock Mattresses only.
@@ -536,8 +543,8 @@
                 <strong>High Point Furniture Sales Clearance Center</strong><br />
                 2035 Brentwood St.<br />
                 High Point, NC 27263<br /><br />
-                <a href="tel:366-841-5664">366-841-5664</a><br /><br />
-                <a href="http://www.highpointfurnituresales.com">highpointfurnituresales.com</a>
+                <a href="tel:366-841-5664" target="_blank">366-841-5664</a><br /><br />
+                <a href="http://www.highpointfurnituresales.com" target="_blank">highpointfurnituresales.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">10-50% off all Floor Stock Furniture and Floor Stock Mattresses only.</div>
@@ -645,7 +652,7 @@
                 <strong>Alexandria's Bistro &amp; Catering</strong><br />
                 215 E. Lexington Ave.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-883-3821">366-883-3821</a><br /><br />
+                <a href="tel:366-883-3821" target="_blank">366-883-3821</a><br /><br />
 
             </p>
             <div class="coupon">
@@ -680,8 +687,8 @@
                 <strong>Carter Brothers BBQ (N. Main)</strong><br />
                 2305 N. Main St.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-869-9948">366-869-9948</a><br /><br />
-                <a href="http://www.carterbrothersbbq.com">carterbrothersbbq.com</a>
+                <a href="tel:366-869-9948" target="_blank">366-869-9948</a><br /><br />
+                <a href="http://www.carterbrothersbbq.com" target="_blank">carterbrothersbbq.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">Buy Any Plate and Beverage, Get a Free Banana Pudding.</div>
@@ -717,8 +724,8 @@
                 <strong>Carter Brothers BBQ (Samet Dr.)</strong><br />
                 3802 Samet Dr.<br />
                 High Point, NC 27265<br /><br />
-                <a href="tel:366-841-2241">366-841-2241</a><br /><br />
-                <a href="http://www.carterbrothersbbq.com">carterbrothersbbq.com</a>
+                <a href="tel:366-841-2241" target="_blank">366-841-2241</a><br /><br />
+                <a href="http://www.carterbrothersbbq.com" target="_blank">carterbrothersbbq.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">Buy Any Plate and Beverage, Get a Free Banana Pudding.</div>
@@ -754,7 +761,7 @@
                 <strong>Casa De Soto Mexican Cuisine</strong><br />
                 1800 Westchester Dr.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-886-4081">366-886-4081</a><br /><br />
+                <a href="tel:366-886-4081" target="_blank">366-886-4081</a><br /><br />
 
             </p>
             <div class="coupon">
@@ -794,8 +801,8 @@
                 <strong>DeBeen Espresso</strong><br />
                 709 W. Lexington Ave.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-889-2107">366-889-2107</a><br /><br />
-                <a href="http://www.debeenespresso.com">debeenespresso.com</a>
+                <a href="tel:366-889-2107" target="_blank">366-889-2107</a><br /><br />
+                <a href="http://www.debeenespresso.com" target="_blank">debeenespresso.com</a>
 
             </p>
             <div class="coupon">
@@ -834,8 +841,8 @@
                 <strong>Full Moon Oyster Bar</strong><br />
                 103 W. Main St.<br />
                 Jamestown, NC 27282<br /><br />
-                <a href="tel:366-307-2887">366-307-2887</a><br /><br />
-                <a href="http://www.fullmoonoysterbar.com">fullmoonoysterbar.com</a>
+                <a href="tel:366-307-2887" target="_blank">366-307-2887</a><br /><br />
+                <a href="http://www.fullmoonoysterbar.com" target="_blank">fullmoonoysterbar.com</a>
 
             </p>
             <div class="coupon">
@@ -869,8 +876,8 @@
                 <strong>Rome Pizza</strong><br />
                 2100 N. Main St.<br />
                 High Point , NC 27265<br /><br />
-                <a href="tel:366-882-5582">366-882-5582</a><br /><br />
-                <a href="http://www.romeitalianpizza.com">romeitalianpizza.com</a>
+                <a href="tel:366-882-5582" target="_blank">366-882-5582</a><br /><br />
+                <a href="http://www.romeitalianpizza.com" target="_blank">romeitalianpizza.com</a>
 
             </p>
             <div class="coupon">
@@ -905,8 +912,8 @@
                 <strong>Sammy G's Tavern</strong><br />
                 3800 Tinsley Dr. Suite 109<br />
                 High Point , NC 27265<br /><br />
-                <a href="tel:366-884-3474">366-884-3474</a><br /><br />
-                <a href="http://www.sammygtavern.com">sammygtavern.com</a>
+                <a href="tel:366-884-3474" target="_blank">366-884-3474</a><br /><br />
+                <a href="http://www.sammygtavern.com" target="_blank">sammygtavern.com</a>
 
             </p>
             <div class="coupon">
@@ -940,8 +947,8 @@
                 <strong>Steak Street</strong><br />
                 3915 Sedge Brook St.<br />
                 High Point , NC 27265<br /><br />
-                <a href="tel:366-841-0222">366-841-0222</a><br /><br />
-                <a href="http://www.steakstreet.com">steakstreet.com</a>
+                <a href="tel:366-841-0222" target="_blank">366-841-0222</a><br /><br />
+                <a href="http://www.steakstreet.com" target="_blank">steakstreet.com</a>
 
             </p>
             <div class="coupon">
@@ -977,8 +984,8 @@
                 <strong>Sumela Restaurant</strong><br />
                 805 N. Main St.<br />
                 High Point , NC 27265<br /><br />
-                <a href="tel:366-887-2645">366-887-2645</a><br /><br />
-                <a href="http://www.sumelarestaurant.com">sumelarestaurant.com</a>
+                <a href="tel:366-887-2645" target="_blank">366-887-2645</a><br /><br />
+                <a href="http://www.sumelarestaurant.com" target="_blank">sumelarestaurant.com</a>
 
             </p>
             <div class="coupon">
@@ -1013,8 +1020,8 @@
                 <strong>The Cozy Cannoli</strong><br />
                 2107 Kirkwood St. Suite 101<br />
                 High Point , NC 27262<br /><br />
-                <a href="tel:366-861-2099">366-861-2099</a><br /><br />
-                <a href="http://www.thecozycannoli.com">thecoztcannoli.com</a>
+                <a href="tel:366-861-2099" target="_blank">366-861-2099</a><br /><br />
+                <a href="http://www.thecozycannoli.com" target="_blank">thecoztcannoli.com</a>
 
             </p>
             <div class="coupon">
@@ -1048,8 +1055,8 @@
                 <strong>The Peppermill Cafe</strong><br />
                 2600 South Main St.<br />
                 High Point , NC 27263<br /><br />
-                <a href="tel:366-885-8101">366-885-8101</a><br /><br />
-                <a href="http://www.peppermillcafe.com">peppermillcafe.com</a>
+                <a href="tel:366-885-8101" target="_blank">366-885-8101</a><br /><br />
+                <a href="http://www.peppermillcafe.com" target="_blank">peppermillcafe.com</a>
 
             </p>
             <div class="coupon">
@@ -1096,8 +1103,8 @@
                 <strong>Wicked Taco</strong><br />
                 2005 N. Main St. Suite 111<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-307-4626">366-307-4626</a><br /><br />
-                <a href="http://www.eatwickedtaco.com">eatwickedtaco.com</a>
+                <a href="tel:366-307-4626" target="_blank">366-307-4626</a><br /><br />
+                <a href="http://www.eatwickedtaco.com" target="_blank">eatwickedtaco.com</a>
 
             </p>
             <div class="coupon">
@@ -1193,8 +1200,8 @@
                 <strong>Castle McCulloch</strong><br />
                 3925 Kivett Dr.<br />
                 Jamestown, NC 27282<br /><br />
-                <a href="tel:366-887-5413">366-887-5413</a><br /><br />
-                <a href="http://www.castlemcculloch.com">castlemcculloch.com</a>
+                <a href="tel:366-887-5413" target="_blank">366-887-5413</a><br /><br />
+                <a href="http://www.castlemcculloch.com" target="_blank">castlemcculloch.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">Receive up to 25% off of your Room Rental! Discount may be applied to any event type including but not limited to: Wedding Ceremonies, Wedding Receptions, Birthday Parties, Corporate Events, Christmas Parties, Baby Showers, Private Events, etc. Event Date Subject to Availability.</div>
@@ -1233,8 +1240,8 @@
                 <strong>High Point Museum</strong><br />
                 1859 E. Lexington Dr.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-885-1859">366-885-1859</a><br /><br />
-                <a href="http://www.highpointmuseum.gov">highpointmuseum.gov</a>
+                <a href="tel:366-885-1859" target="_blank">366-885-1859</a><br /><br />
+                <a href="http://www.highpointmuseum.gov" target="_blank">highpointmuseum.gov</a>
             </p>
             <div class="coupon">
                 <p class="centered">$5 off purchase of $25 or more in the Museum Store</p>
@@ -1268,8 +1275,8 @@
                 <strong>IDA Christian Books &amp; Gifts</strong><br />
                 1300 N. Main St.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-434-4663">366-434-4663</a><br /><br />
-                <a href="http://www.idabookstore.com">idabookstore.com</a>
+                <a href="tel:366-434-4663" target="_blank">366-434-4663</a><br /><br />
+                <a href="http://www.idabookstore.com" target="_blank">idabookstore.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">$5 off a $20 purchase</div>
@@ -1305,8 +1312,8 @@
                 <strong>Kersey Valley Attractions</strong><br />
                 1615 Kersey Valley Rd.<br />
                 Archdale, NC 27263<br /><br />
-                <a href="tel:366-431-1700">366-431-1700</a><br /><br />
-                <a href="http://www.kerseyvalley.com">kerseyvalley.com</a>
+                <a href="tel:366-431-1700" target="_blank">366-431-1700</a><br /><br />
+                <a href="http://www.kerseyvalley.com" target="_blank">kerseyvalley.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">Buy One Get One FREE First Class Zipline</div>
@@ -1344,8 +1351,8 @@
                 <strong>Linbrook Heritage Estate's Linbrook Hall</strong><br />
                 5297 Snyder Country Rd.<br />
                 Trinity, NC 27370<br /><br />
-                <a href="tel:366-861-6959">366-861-6959</a><br /><br />
-                <a href="http://www.linbrookheritageestate.com">linbrookheritageestate.com</a>
+                <a href="tel:366-861-6959" target="_blank">366-861-6959</a><br /><br />
+                <a href="http://www.linbrookheritageestate.com" target="_blank">linbrookheritageestate.com</a>
             </p>
             <div class="coupon">
                 <p class="centered">Guided Group Tours of Linbrook Hall, year-round, by reservation, $5 Off Admissions</p>
@@ -1380,8 +1387,8 @@
                 <strong>Master's Design, Inc.</strong><br />
                 202 W. Lexington Ave.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-239-6233">366-239-6233</a><br /><br />
-                <a href="http://www.mastersdesigninc.com">mastersdesigninc.com</a>
+                <a href="tel:366-239-6233" target="_blank">366-239-6233</a><br /><br />
+                <a href="http://www.mastersdesigninc.com" target="_blank">mastersdesigninc.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">1 hour free consultation for Interior Design Services</div>
@@ -1417,8 +1424,8 @@
                 <strong>NC Furniture Advisor</strong><br />
                 1108 Dover Rd.<br />
                 Greensboro, NC 27408<br /><br />
-                <a href="tel:366-404-1040">366-404-1040</a><br /><br />
-                <a href="http://www.ncfurnitureadvisor.com">ncfurnitureadvisor.com</a>
+                <a href="tel:366-404-1040" target="_blank">366-404-1040</a><br /><br />
+                <a href="http://www.ncfurnitureadvisor.com" target="_blank">ncfurnitureadvisor.com</a>
             </p>
             <div class="coupon">
                 <p class="centered">Free Furniture Tour of High Point's best discounters and showrooms.</p>
@@ -1452,8 +1459,8 @@
                 <strong>Royal Limousine</strong><br />
                 621 Greensboro Rd.<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-899-7777">366-899-7777</a><br /><br />
-                <a href="http://www.royallimonc.com">royallimonc.com</a>
+                <a href="tel:366-899-7777" target="_blank">366-899-7777</a><br /><br />
+                <a href="http://www.royallimonc.com" target="_blank">royallimonc.com</a>
             </p>
             <div class="coupon">
                 <p class="centered">10% off any transportation service</p>
@@ -1487,8 +1494,8 @@
                 <strong>Simon Jewelers</strong><br />
                 1345 N. Main St. #108<br />
                 High Point, NC 27262<br /><br />
-                <a href="tel:366-887-9394">366-887-9394</a><br /><br />
-                <a href="http://www.simonjewelers.com">simonjewelers.com</a>
+                <a href="tel:366-887-9394" target="_blank">366-887-9394</a><br /><br />
+                <a href="http://www.simonjewelers.com" target="_blank">simonjewelers.com</a>
             </p>
             <div class="coupon">
                 <div class="centered">Complimentary Jewelry Cleaning</div>

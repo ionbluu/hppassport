@@ -13,6 +13,7 @@
     <platform name="android" />
     <content src="index.html" />
     <access origin="*" />
+    <access origin="tel:*" launch-external="yes" />
 
     <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="Orientation" value="portrait" />
