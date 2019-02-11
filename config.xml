@@ -72,22 +72,22 @@
 
         <!-- ICONS -->
 
-        <icon src="res/android/icon/ldpi.png" qualifier="ldpi" />
-        <icon src="res/android/icon/mdpi.png" qualifier="mdpi" />
-        <icon src="res/android/icon/hdpi.png" qualifier="hdpi" />
-        <icon src="res/android/icon/xhdpi.png" qualifier="xhdpi" />
-        <icon src="res/android/icon/xxhdpi.png" qualifier="xxhdpi" />
-        <icon src="res/android/icon/xxxhdpi.png" qualifier="xxxhdpi" />
-        <icon src="res/android/icon/fr-xxhdpi.png" qualifier="fr-xxhdpi" />
+        <icon src="www/res/android/icon/ldpi.png" qualifier="ldpi" />
+        <icon src="www/res/android/icon/mdpi.png" qualifier="mdpi" />
+        <icon src="www/res/android/icon/hdpi.png" qualifier="hdpi" />
+        <icon src="www/res/android/icon/xhdpi.png" qualifier="xhdpi" />
+        <icon src="www/res/android/icon/xxhdpi.png" qualifier="xxhdpi" />
+        <icon src="www/res/android/icon/xxxhdpi.png" qualifier="xxxhdpi" />
+        <icon src="www/res/android/icon/fr-xxhdpi.png" qualifier="fr-xxhdpi" />
 
         <!-- Splash Screens -->
 
-        <splash src="res/android/splash/hdpi.png" density="port-hdpi" />
-        <splash src="res/android/splash/ldpi.png" density="port-ldpi" />
-        <splash src="res/android/splash/mdpi.png" density="port-mdpi" />
-        <splash src="res/android/splash/xhdpi.png" density="port-xhdpi" />
-        <splash src="res/android/splash/xxhdpi.png" density="port-xxhdpi" />
-        <splash src="res/android/splash/xxxhdpi.png" density="port-xxxhdpi" />
+        <splash src="www/res/android/splash/hdpi.png" density="port-hdpi" />
+        <splash src="www/res/android/splash/ldpi.png" density="port-ldpi" />
+        <splash src="www/res/android/splash/mdpi.png" density="port-mdpi" />
+        <splash src="www/res/android/splash/xhdpi.png" density="port-xhdpi" />
+        <splash src="www/res/android/splash/xxhdpi.png" density="port-xxhdpi" />
+        <splash src="www/res/android/splash/xxxhdpi.png" density="port-xxxhdpi" />
     </platform>
 
     <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
