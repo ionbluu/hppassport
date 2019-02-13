@@ -46,6 +46,10 @@
     color: darkblue;
 }
 
+.fa-caret-square-left {
+    color: #cc0000;
+}
+
 .mainContent {
     max-width: 600px;
     margin: 0 auto;
