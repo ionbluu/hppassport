@@ -90,6 +90,8 @@
         <splash src="www/res/android/splash/xxxhdpi.png" density="port-xxxhdpi" />
     </platform>
 
-    <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
-    <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
+  
+    <plugin name="cordova-plugin-inappbrowser" spec="3.0.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="5.0.3" />
+
 </widget>
