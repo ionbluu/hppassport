@@ -14,7 +14,6 @@
         $(document).on('mobileinit', function() {
             $.mobile.defaultPageTransition = 'slide';
         });
-
     </script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="phonegap.js"></script>
@@ -34,7 +33,6 @@
                 e.preventDefault();
             }
         });
-
     </script>
 
 </head>
@@ -58,13 +56,13 @@
                     <a href="#furniture" class="ui-corner-none"><i class="fas fa-chair"></i> &nbsp; Furniture <span class="ui-li-count">6</span></a>
                 </li>
                 <li>
-                    <a href="#lodging"><i class="fas fa-bed"></i> &nbsp; Lodging <span class="ui-li-count">2</span></a>
+                    <a href="#lodging"><i class="fas fa-bed"></i> &nbsp; Lodging <span class="ui-li-count">3</span></a>
                 </li>
                 <li>
-                    <a href="#food"><i class="fas fa-utensils"></i> &nbsp; Food &amp; Drink <span class="ui-li-count">13</span></a>
+                    <a href="#food"><i class="fas fa-utensils"></i> &nbsp; Food &amp; Drink <span class="ui-li-count">14</span></a>
                 </li>
                 <li>
-                    <a href="#services" class="ui-corner-none"><i class="far fa-handshake"></i> &nbsp; Attractions &amp; Services <span class="ui-li-count">9</span></a>
+                    <a href="#services" class="ui-corner-none"><i class="far fa-handshake"></i> &nbsp; Attractions &amp; Services <span class="ui-li-count">10</span></a>
                 </li>
             </ul>
             <br />
@@ -124,7 +122,6 @@
                     copyright = new Date();
                     update = copyright.getFullYear();
                     document.write("Copyright &copy; " + update + "<br/> High Point Convention &amp; Visitors Bureau <br/> All rights reserved.");
-
                 </script>
             </p>
             <p>&nbsp;</p>
@@ -202,7 +199,10 @@
 
             <ul data-role="listview" data-inset="true">
                 <li>
-                    <a href="#7oaks">Seven Oaks Bed &amp; Breakfast</a>
+                    <a href="#7oaks">Seven Oaks Inn Bed &amp; Breakfast</a>
+                </li>
+                <li>
+                    <a href="#jhAdams">JH Adams Inn</a>
                 </li>
                 <li>
                     <a href="#wingate">Wingate by Wyndham</a>
@@ -226,13 +226,13 @@
     <div data-role="page" id="7oaks" data-title="Seven Oaks">
         <div data-role="header" data-position="fixed">
             <a href="#lodging" class="ui-btn" data-direction="reverse"><i class="fas fa-caret-square-left" fa-lg></i></a>
-            <h2>Seven Oaks Bed &amp; Breakfast</h2>
+            <h2>Seven Oaks Inn Bed &amp; Breakfast</h2>
         </div><!-- /header -->
 
         <div role="main" class="ui-content mainContent">
             <p class="centered"><img class="logo" src="img/7oaks.jpg"></p>
             <p class="centered">
-                <strong>Seven Oaks Bed &amp; Breakfast</strong><br />
+                <strong>Seven Oaks Inn Bed &amp; Breakfast</strong><br />
                 833 Old Mill Rd.<br />
                 High Point, NC 27265<br /><br />
                 <a href="tel:336-899-6257" target="_blank">336-899-6257</a><br /><br />
@@ -257,6 +257,45 @@
     </div><!-- page -->
 
 
+
+
+
+
+    <!-- Start of JH Adams Inn page -->
+    <div data-role="page" id="jhAdams" data-title="JH Adams">
+        <div data-role="header" data-position="fixed">
+            <a href="#lodging" class="ui-btn" data-direction="reverse"><i class="fas fa-caret-square-left" fa-lg></i></a>
+            <h2>JH Adams Inn </h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content mainContent">
+            <p class="centered"><img class="logo" src="img/jhadams.png"></p>
+            <p class="centered">
+                <strong>JH Adams Inn </strong><br />
+                1108 North Main St.<br />
+                High Point, NC 27262<br /><br />
+                <a href="tel:336-882-3267" target="_blank">336-882-3267</a><br /><br />
+                <a href="https://jhadamsinn.com/" target="_blank">jhadamsinn.com</a>
+            </p>
+            <div class="coupon">
+                <p class="centered">Show your Passport App to receive 10% off nightly room rate and a free appetizer<br />
+                    <hr />
+                    Not available during blackout dates (i.e. market, holidays, HPU family/event dates, private events/parties)
+                </p>
+            </div>
+        </div><!-- /main -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- page --
 
 
 
@@ -317,7 +356,7 @@
                 <li>
                     <a href="#ashleyInt">Ashley Interiors / Braxton Culler</a>
                 </li>
-                   <li>
+                <li>
                     <a href="#capa">Capa</a>
                 </li>
                 <li>
@@ -383,13 +422,13 @@
             </div>
         </div>
     </div><!-- page -->
-    
-    
-    
-    
-    
-    
-      <!-- Start of Capa page -->
+
+
+
+
+
+
+    <!-- Start of Capa page -->
     <div data-role="page" id="capa" data-title="Capa">
         <div data-role="header" data-position="fixed">
             <a href="#furniture" class="ui-btn" data-direction="reverse"><i class="fas fa-caret-square-left" fa-lg></i></a>
@@ -400,7 +439,7 @@
             <p class="centered"><img src="img/capa.png" class="logo"></p>
             <p class="centered">
                 <strong>Capa</strong><br />
-                319 North Main Street<br/> 
+                319 North Main Street<br />
                 329 North Main Street<br />
                 High Point, NC 27260<br /><br />
                 <a href="tel:336-885-9999" target="_blank">336-885-9999</a><br /><br />
@@ -409,7 +448,7 @@
             <div class="coupon">
                 <div class="centered">10% off all dining room furniture, upholstery, and bedroom furniture</div>
                 <hr />
-                <div class="centered"> Must register this offer from the Passport to Savings App upon arrival with desk clerk<br/>
+                <div class="centered"> Must register this offer from the Passport to Savings App upon arrival with desk clerk<br />
                     Not valid on sale items or special orders</div>
             </div>
         </div><!-- /main -->
@@ -659,6 +698,9 @@
                 </li>
                 <li>
                     <a href="#sumela">Sumela Restaurant</a>
+                </li>
+                <li>
+                    <a href="#sobs">Sweet Old Bill's</a>
                 </li>
                 <li>
                     <a href="#cannoli">The Cozy Cannoli</a>
@@ -1053,6 +1095,43 @@
 
 
 
+    <!-- Start of Sweet Old Bills page -->
+    <div data-role="page" id="sobs" data-title="Sweet Old Bill's">
+        <div data-role="header" data-position="fixed">
+            <a href="#food" class="ui-btn" data-direction="reverse"><i class="fas fa-caret-square-left" fa-lg></i></a>
+            <h2>Sweet Old Bill's</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content mainContent">
+            <p class="centered"><img src="img/SweetOldBills.jpg" class="logo"></p>
+            <p class="centered">
+                <strong>Sweet Old Bill's</strong><br />
+                1232 N. Main St.<br />
+                High Point , NC 27265<br /><br />
+                <a href="tel:336-807-1476" target="_blank">336-807-1476</a><br /><br />
+                <a href="https://www.facebook.com/SweetOldBills/" target="_blank">facebook.com/SweetOldBills</a>
+
+            </p>
+            <div class="coupon">
+                <div class="centered">Free appetizer with purchase of 2 sandwiches/entrees</div>
+                <hr />
+                <div class="centered">One per table</div>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
+
+
+
     <!-- Start of The Cozy Cannoli page -->
     <div data-role="page" id="cannoli" data-title="The Cozy Cannoli">
         <div data-role="header" data-position="fixed">
@@ -1192,6 +1271,9 @@
                     <a href="#castle">Castle McCulloch</a>
                 </li>
                 <li>
+                    <a href="#hpct">High Point Community Theatre</a>
+                </li>
+                <li>
                     <a href="#museum">High Point Museum</a>
                 </li>
                 <li>
@@ -1256,6 +1338,42 @@
                 <hr />
                 <div class="centered">Event must fall within Monday through Friday and Event Date is Subject to Availability
                 </div>
+            </div><!-- /coupon -->
+        </div><!-- /main -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#furniture"><i class="fas fa-chair fa-2x"></i><br />Furniture</a></li>
+                    <li><a href="#lodging"><i class="fas fa-bed fa-2x"></i><br />Lodging</a></li>
+                    <li><a href="#food"><i class="fas fa-utensils fa-2x"></i><br />Food</a></li>
+                    <li><a href="#services"><i class="far fa-handshake fa-2x"></i><br />Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- page -->
+
+
+
+    <!-- Start of High Point Community Theatre page -->
+    <div data-role="page" id="hpct" data-title="High Point Community Theatre">
+        <div data-role="header" data-position="fixed">
+            <a href="#services" class="ui-btn" data-direction="reverse"><i class="fas fa-caret-square-left" fa-lg></i></a>
+            <h2>High Point Community Theatre</h2>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content mainContent">
+            <p class="centered"><img src="img/HPCT.png" class="logo"></p>
+            <p class="centered">
+                <strong>High Point Community Theatre</strong><br />
+                P.O. Box 1152<br />
+                High Point, NC 27261<br /><br />
+                <a href="tel:336-882-2542" target="_blank">336-882-2542</a><br /><br />
+                <a href="https://www.hpct.net/" target="_blank">hpct.net</a>
+            </p>
+            <div class="coupon">
+                <div class="centered">Enjoy 15% off 2019-2020 season Flex Passes with High Point's only full-scale theatre company. To order go to <a href="https://www.hpct.net/purchase-season-tickets" target="_blank">hpct.net/purchase-season-tickets</a> and enter the code <b>PARTNERS</b></div>
+                <hr />
+                <div class="centered">No limit to the number of times this code can be used.</div>
             </div><!-- /coupon -->
         </div><!-- /main -->
         <div data-role="footer" data-position="fixed">
@@ -1566,6 +1684,4 @@
 
 
     <!-- ================ -->
-</body>
-
-</html>
+</body></html>
