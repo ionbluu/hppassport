@@ -15,14 +15,14 @@
     <access origin="*" />
     <access origin="tel:*" launch-external="yes" />
 
-    <preference name="phonegap-version" value="cli-8.1.1" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
     <preference name="Orientation" value="portrait" />
     <preference name="Fullscreen" value="true" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="exit-on-suspend" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="26" />
+    <preference name="android-minSdkVersion" value="26" />
+    <preference name="android-targetSdkVersion" value="28" />
 
     <icon src="www/res/icon.png" />
     <icon src="www/res/icon-1024.png" width="1024" height="1024" />
